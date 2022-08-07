@@ -1,0 +1,198 @@
+/* Estilos gerais */
+
+@font-face {
+  font-family: 'Pou';
+  src: url(../fonts/Pou.otf) format('opentype'), url(../fonts/Pou.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pou", "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", Arial, sans-serif;
+  background-color: #37393e;
+}
+
+a {
+  color: #dcddde;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Navbar */
+
+.navbar {
+  position: sticky;
+  background: #19191b;
+  color: #dcddde;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background: url(../img/logo.png) no-repeat;
+  background-size: 70px;
+  background-position: 10% 35%;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.menu a {
+  display: block;
+  text-align: center;
+  padding: 1.25rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  background: black;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+/* Headline */
+
+.headline-container {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #dcddde;
+}
+
+.rainbow-text {
+  animation-name: rainbow;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #e6261f;
+  }
+  12.5% {
+    color: #eb7532;
+  }
+  25% {
+    color: #f7d038;
+  }
+  37.5% {
+    color: #a3e048;
+  }
+  50% {
+    color: #49da9a;
+  }
+  62.5% {
+    color: #4355db;
+  }
+  75% {
+    color: #d23be7;
+  }
+  87.5% {
+    color: #eb7532;
+  }
+  100% {
+    color: #e6261f;
+  }
+}
+
+.headline-container #soundbutton {
+  text-decoration: none;
+  color: #dcddde;
+  background: #111;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.headline-container p {
+  font-size: 1.125rem;
+}
+
+/* About Styles */
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  justify-items: stretch;
+  object-fit: cover;
+  color: #dcddde;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.photo-group {
+  border: 5px solid #19191b;
+}
+
+.chad {
+  width: 40px;
+  height: 20px;
+}
+
+.about-container h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.about-container p {
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Memes styles */
+
+.work-container {
+  text-align: center;
+  color: #dcddde;
+}
+
+.work-container h2 {
+  font-size: 1.875rem;
+}
+
+/* Media Querys */
+
+@media (max-width: 600px) {
+  .btn-mobile {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+
