@@ -203,9 +203,9 @@ a {
 /* About Styles */
 
 .about-container {
+  display: grid;
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   justify-items: stretch;
   object-fit: cover;
@@ -229,7 +229,7 @@ a {
 }
 
 .about-container h2 {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
