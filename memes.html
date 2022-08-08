@@ -11,8 +11,10 @@
     <nav class="navbar">
       <div class="navbar-container">
         <a href="https://youtube.com/retasusse" class="logo" target="_blank"></a>
-        <button class="btn-mobile">Menu</button>
-        <ul class="menu">
+        <button aria-label="Abrir Menu" class="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="menu" role="menu">
           <li><a href="index.html">Início</a></li>
           <li><a href="about.html">Integrantes</a></li>
           <li><a href="memes.html">Memes</a></li>
