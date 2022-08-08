@@ -72,6 +72,18 @@ a {
   display: none;
 }
 
+/* Media Query Mobile Navbar */
+
+@media (max-width: 600px) {
+  .btn-mobile {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+
 /* Headline */
 
 .headline-container {
@@ -184,15 +196,3 @@ a {
 .work-container h2 {
   font-size: 1.875rem;
 }
-
-/* Media Querys */
-
-@media (max-width: 600px) {
-  .btn-mobile {
-    display: block;
-  }
-  .menu {
-    display: none;
-  }
-}
-
