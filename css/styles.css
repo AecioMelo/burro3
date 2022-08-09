@@ -47,11 +47,11 @@ a {
 
 .logo {
   background: url(../img/logo.png) no-repeat;
-  background-size: 70px;
+  background-size: 4.375rem;
   background-position: 10% 35%;
   border-radius: 3.125rem;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-left: 3.125rem;
 }
 
@@ -215,7 +215,7 @@ a {
 .about-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   max-width: 1200px;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -226,6 +226,7 @@ a {
 .box {
   width: 300px;
   height: 300px;
+  text-align: center;
   margin: 2rem;
 }
 
@@ -245,13 +246,12 @@ a {
 }
 
 .about-container h2 {
-  font-size: 30px;
+  font-size: 1.875rem;
   margin-top: 0.5rem;
 }
 
 .about-container p {
-  font-size: 20px;
-  margin-bottom: 1rem;
+  font-size: 1.25rem;
 }
 
 /* Memes styles */
@@ -286,8 +286,8 @@ a {
 }
 
 .jobs-items:hover {
-  border-image: none;
-  border: 5px solid black;
+  transform: scale(1.1);
+  z-index: 0;
 }
 
 .jobs-items img {
