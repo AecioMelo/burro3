@@ -207,10 +207,9 @@ a {
 /* About Styles */
 
 .about {
-  display: flex;
-  align-items: stretch;
-  margin: 1rem auto;
-  height: 92vh;
+  text-align: center;
+  color: #dcddde;
+  margin: 2rem auto;
 }
 
 .about-container {
@@ -224,28 +223,20 @@ a {
   gap: 3rem;
 }
 
-.photo-group {
-  padding: 9.375rem;
+.box {
+  width: 300px;
+  height: 300px;
+  margin: 2rem;
+}
+
+.photo-group img {
+  height: 100%;
   width: 100%;
-}
-
-.photo1 {
-  background: url("../img/aecio.png") no-repeat center;
-  background-size: 100%;
-}
-
-.photo2 {
-  background: url("../img/pedro.png") no-repeat center;
-  background-size: 100%;
-}
-
-.photo3 {
-  background: url("../img/thiago.png") no-repeat center;
-  background-size: 100%;
-}
-
-.photo-group {
-  border: 5px solid #19191b;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  flex-grow: 1;
+  transition: transform .2s linear;
 }
 
 .chad {
@@ -255,12 +246,10 @@ a {
 
 .about-container h2 {
   font-size: 30px;
-  text-align: center;
   margin-top: 0.5rem;
 }
 
 .about-container p {
-  text-align: center;
   font-size: 20px;
   margin-bottom: 1rem;
 }
