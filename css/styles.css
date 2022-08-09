@@ -202,21 +202,41 @@ a {
 
 /* About Styles */
 
-.about-container {
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  justify-items: stretch;
-  object-fit: cover;
-  color: #dcddde;
+.about {
+  display: flex;
+  align-items: center;
+  height: 92vh;
 }
 
-.box {
+.about-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  color: #dcddde;
+  gap: 3rem;
+}
+
+.photo-group {
+  padding: 9.375rem;
+  width: 100%;
+}
+
+.photo1 {
+  background: url("/img/aecio.png") no-repeat center;
+  background-size: 100%;
+}
+
+.photo2 {
+  background: url("/img/pedro.png") no-repeat center;
+  background-size: 100%;
+}
+
+.photo3 {
+  background: url("/img/thiago.png") no-repeat center;
+  background-size: 100%;
 }
 
 .photo-group {
@@ -224,13 +244,14 @@ a {
 }
 
 .chad {
-  width: 40px;
-  height: 20px;
+  width: 2rem;
+  height: 1rem;
 }
 
 .about-container h2 {
   font-size: 30px;
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .about-container p {
