@@ -77,7 +77,7 @@ a {
 
 /* Media Query Mobile Navbar */
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
   .menu {
     display: block;
     position: absolute;
@@ -178,7 +178,7 @@ a {
   75% {
     color: #d23be7;
   }
-  87.5% {
+  87.5% { 
     color: #eb7532;
   }
   100% {
@@ -204,7 +204,8 @@ a {
 
 .about {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  margin: 1rem auto;
   height: 92vh;
 }
 
@@ -257,6 +258,7 @@ a {
 .about-container p {
   text-align: center;
   font-size: 20px;
+  margin-bottom: 1rem;
 }
 
 /* Memes styles */
