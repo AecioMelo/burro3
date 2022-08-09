@@ -38,6 +38,11 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
+  overflow: auto;
+}
+
+.navbar-container::-webkit-scrollbar {
+  display: none;
 }
 
 .logo {
@@ -56,12 +61,12 @@ a {
   align-items: center;
   list-style: none;
   gap: 0.5rem;
-}
+} 
 
 .menu a {
   display: block;
   text-align: center;
-  padding: 1rem;
+  padding: 1.2rem;
   text-decoration: none;
   text-transform: uppercase;
   height: 100%;
@@ -134,7 +139,6 @@ a {
     top: -7px;
   }
 }
-
 
 /* Headline */
 
@@ -266,8 +270,38 @@ a {
 .work-container {
   text-align: center;
   color: #dcddde;
+  margin: 2rem;
 }
 
 .work-container h2 {
   font-size: 1.875rem;
+  margin: 2rem auto;
+}
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 1vw;
+}
+
+.jobs-items {
+  width: 300px;
+  height: 300px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  flex-grow: 1;
+  transition: transform .2s linear;
+}
+
+.jobs-items:hover {
+  transform: scale(1.1);
+}
+
+.jobs-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
