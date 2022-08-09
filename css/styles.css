@@ -230,17 +230,17 @@ a {
 }
 
 .photo1 {
-  background: url("/img/aecio.png") no-repeat center;
+  background: url("../img/aecio.png") no-repeat center;
   background-size: 100%;
 }
 
 .photo2 {
-  background: url("/img/pedro.png") no-repeat center;
+  background: url(";;/img/pedro.png") no-repeat center;
   background-size: 100%;
 }
 
 .photo3 {
-  background: url("/img/thiago.png") no-repeat center;
+  background: url(";;/img/thiago.png") no-repeat center;
   background-size: 100%;
 }
 
