@@ -295,3 +295,16 @@ a {
   height: 100%;
   object-fit: fill;
 }
+
+/* Burro3 Clothing */
+
+.clothing-container {
+  text-align: center;
+  color: #dcddde;
+  margin: 2rem;
+}
+
+.clothing-container h2 {
+  font-size: 1.875rem;
+  margin: 2rem auto;
+}
