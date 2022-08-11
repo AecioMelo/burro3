@@ -80,66 +80,6 @@ a {
   display: none;
 }
 
-/* Media Query Mobile Navbar */
-
-@media (max-width: 800px) {
-  .menu {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 8vh;
-    right: 0px;
-    background: #19191b;
-    transition: .6s;
-    height: 92vh;
-    z-index: 1000;
-    height: 0;
-    visibility: hidden;
-    overflow-y: hidden;
-  }
-  .navbar-container.active .menu {
-    height: 92vh;
-    visibility: visible;
-    overflow-y: auto;
-  }
-  .btn-mobile {
-    display: flex;
-    padding: .5rem 2rem;
-    font-size: 1rem;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: #dcddde;
-    gap: .5rem;
-  }
-  .hamburger {
-    color: #dcddde;
-    display: block;
-    border-top: 2px solid;
-    width: 20px;
-  }
-  .hamburger::after, .hamburger::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background: currentColor;
-    margin-top: 5px;
-    transition: .3s;
-    position: relative;
-  }
-  .navbar-container.active .hamburger {
-    border-top-color: transparent;
-  }
-  .navbar-container.active .hamburger::before {
-    transform: rotate(135deg);
-  }
-  .navbar-container.active .hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-  }
-}
-
 /* Headline */
 
 .headline-container {
@@ -287,7 +227,6 @@ a {
 
 .jobs-items:hover {
   transform: scale(1.1);
-  z-index: 0;
 }
 
 .jobs-items img {
@@ -307,4 +246,67 @@ a {
 .clothing-container h2 {
   font-size: 1.875rem;
   margin: 2rem auto;
+}
+
+/* Media Query Mobile Navbar */
+
+@media (max-width: 800px) {
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 8vh;
+    right: 0px;
+    background: #19191b;
+    transition: .6s;
+    height: 92vh;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .navbar-container.active .menu {
+    height: 92vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .btn-mobile {
+    display: flex;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #dcddde;
+    gap: .5rem;
+  }
+  .hamburger {
+    color: #dcddde;
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+  .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  .navbar-container.active .hamburger {
+    border-top-color: transparent;
+  }
+  .navbar-container.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .navbar-container.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .jobs-items {
+    z-index: -1;
+  }
 }
