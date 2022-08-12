@@ -116,6 +116,7 @@ a {
   animation-iteration-count: infinite;
   font-size: 3.75rem;
   text-transform: uppercase;
+  cursor: default;
 }
 
 @keyframes rainbow {
