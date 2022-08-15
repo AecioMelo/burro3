@@ -101,7 +101,7 @@ a {
 /* Headline */
 
 .headline-container {
-  height: 85vh;
+  height: 92vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,12 +259,31 @@ a {
 .clothing-container {
   text-align: center;
   color: #dcddde;
-  margin: 2rem;
+  margin: 2rem; 
+  margin-inline: auto;
 }
 
 .clothing-container h2 {
   font-size: 1.875rem;
   margin: 2rem auto;
+}
+
+.clothes {
+  display: grid;
+  margin: 2rem;
+  grid-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  height: 100vh;
+}
+
+.clothes img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Media Query Mobile Navbar */
