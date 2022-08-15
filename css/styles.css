@@ -278,7 +278,6 @@ a {
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
   border-image-slice: 1;
-  height: 100vh;
 }
 
 .clothes img {
