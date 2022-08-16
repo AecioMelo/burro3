@@ -324,6 +324,9 @@ a {
   .clothing-header .header-item {
     height: 100px;
   }
+  .item2 {
+    display: none;
+  }
 }
 
 /* Media Query Mobile Navbar */
