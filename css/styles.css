@@ -256,10 +256,6 @@ a {
 
 /* Burro3 Clothing */
 
-.clothing {
-  background: #222;
-}
-
 .clothing-header {
   display: flex;
   border: 5px solid transparent;
@@ -284,7 +280,6 @@ a {
   color: #dcddde;
   margin: 2rem; 
   margin-inline: auto;
-  background: #222;
   height: 92vh;
 }
 
@@ -339,7 +334,6 @@ a {
   justify-content: space-evenly;
   gap: 2vw;
   padding: 0 1vw;
-  background: #222;
 }
 
 .clothes .item {
@@ -361,6 +355,10 @@ a {
 
 .link-text {
   font-size: 1rem;
+}
+
+.price-text {
+  letter-spacing: 0.15rem;
 }
 
 /* Media Query Clothing */
