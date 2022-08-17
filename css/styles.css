@@ -256,6 +256,10 @@ a {
 
 /* Burro3 Clothing */
 
+.clothing-body {
+  background: #222;
+}
+
 .clothing-header {
   display: flex;
   border: 5px solid transparent;
