@@ -381,6 +381,8 @@ a {
 
 .supercagaoday {
   margin: 2rem;
+  color: #dcddde;
+  text-align: center;
 }
 
 .supercagaoday-container {
@@ -389,6 +391,11 @@ a {
   justify-content: space-evenly;
   gap: 2vw;
   padding: 0 1vw;
+}
+
+.supercagaoday h2 {
+  font-size: 1.875rem;
+  margin: 2rem auto;
 }
 
 .supercagaoday-items {
