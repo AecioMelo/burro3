@@ -3,7 +3,7 @@ var sound
 
 //numero aleatorio
 function generateRandomNumber() {
-  return Math.floor(Math.random() * 5 + 1)
+  return Math.floor(Math.random() * 6 + 1)
 }
 
 function playSound() {
@@ -27,6 +27,8 @@ function playSound() {
     sound.src = './sounds/aecio.mp3'
   } else if (x == 5) {
     sound.src = './sounds/alerta.mp3'
+  } else if (x == 6) {
+    sound.src = './sounds/pemorreu.mp3'
   }
   //solta o som dj
   sound.play()
