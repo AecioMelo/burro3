@@ -481,3 +481,11 @@ a {
     z-index: -1;
   }
 }
+
+/* Media Query About */
+
+@media(max-width: 1200px) {
+  .box {
+    margin: 2rem auto;
+  }
+}
