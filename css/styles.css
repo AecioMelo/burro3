@@ -1,0 +1,491 @@
+/* Estilos gerais */
+
+@font-face {
+  font-family: 'Pou';
+  src: url(../fonts/Pou.otf) format('opentype'), url(../fonts/Pou.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Pou", "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Comic Neue", Arial, sans-serif;
+  background-color: #37393e;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+a {
+  color: #dcddde;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Navbar */
+
+.navbar {
+  position: sticky;
+  background: #19191b;
+  color: #dcddde;
+  height: 8vh;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  overflow: auto;
+}
+
+.navbar-container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.navbar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.logo {
+  background: url(../img/logo.png) no-repeat center center / cover;
+  background-size: 4.375rem;
+  background-position: 10% 35%;
+  border-radius: 3.125rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 3.125rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  gap: 0.5rem;
+} 
+
+.menu a {
+  display: block;
+  text-align: center;
+  padding: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 100%;
+}
+
+.menu a:hover {
+  background: black;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+/* Headline */
+
+.headline-container {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #dcddde;
+}
+
+.rainbow-text {
+  animation-name: rainbow;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #e6261f;
+  }
+  12.5% {
+    color: #eb7532;
+  }
+  25% {
+    color: #f7d038;
+  }
+  37.5% {
+    color: #a3e048;
+  }
+  50% {
+    color: #49da9a;
+  }
+  62.5% {
+    color: #4355db;
+  }
+  75% {
+    color: #d23be7;
+  }
+  87.5% { 
+    color: #eb7532;
+  }
+  100% {
+    color: #e6261f;
+  }
+}
+
+.headline-container #soundbutton {
+  text-decoration: none;
+  color: #dcddde;
+  background: #111;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.headline-container p {
+  font-size: 1.125rem;
+}
+
+/* About Styles */
+
+.about {
+  text-align: center;
+  color: #dcddde;
+  margin: 2rem auto;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  color: #dcddde;
+  gap: 3rem;
+}
+
+.box {
+  width: 220px;
+  height: 220px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.photo-group img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  flex-grow: 1;
+  transition: transform .2s linear;
+}
+
+.chad {
+  width: 2rem;
+  height: 1rem;
+}
+
+.about-container h2 {
+  font-size: 1.875rem;
+  margin-top: 0.5rem;
+}
+
+.about-container p {
+  font-size: 1.25rem;
+}
+
+/* Memes styles */
+
+.work-container {
+  text-align: center;
+  color: #dcddde;
+  margin: 2rem;
+}
+
+.work-container h2 {
+  font-size: 1.875rem;
+  margin: 2rem auto;
+}
+
+.jobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 1vw;
+}
+
+.jobs-items {
+  width: 300px;
+  height: 300px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  flex-grow: 1;
+  transition: transform .2s linear;
+}
+
+.jobs-items:hover {
+  transform: scale(1.05);
+}
+
+.jobs-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Clothing */
+
+.clothing-body {
+  background: #222;
+}
+
+.clothing-header {
+  display: flex;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.header-item {
+  width: 100%;
+  height: 200px;
+}
+
+.clothing-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.clothing-container {
+  text-align: center;
+  color: #dcddde;
+  margin: 2rem; 
+  margin-inline: auto;
+  height: 92vh;
+}
+
+
+.clothing-container h2 {
+  font-size: 1.875rem;
+  margin: 2rem auto;
+}
+
+.clothing-rainbow-text {
+  animation-name: clothing-rainbow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+}
+
+@keyframes clothing-rainbow {
+  0% {
+    color: white;
+  }
+  12.5% {
+    color: magenta;
+  }
+  25% {
+    color: white;
+  }
+  37.5% {
+    color: magenta;
+  }
+  50% {
+    color: white;
+  }
+  62.5% {
+    color: magenta;
+  }
+  75% {
+    color: white;
+  }
+  87.5% { 
+    color: magenta;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.clothes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 1vw;
+}
+
+.clothes .item {
+  width: 300px;
+  height: 300px;
+  padding-bottom: 3rem;
+  opacity: 100%;
+}
+
+.clothes .item:hover {
+  opacity: 80%;
+}
+
+.clothe img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.link-text {
+  font-size: 1rem;
+}
+
+.price-text {
+  letter-spacing: 0.15rem;
+}
+
+/* Media Query Clothing */
+
+@media (max-width: 640px) {
+  .clothing-header {
+    flex-wrap: wrap;
+  }
+  .clothing-header .header-item {
+    height: 150px;
+  }
+  .item2 {
+    display: none;
+  }
+}
+
+.supercagaoday {
+  margin: 2rem;
+  color: #dcddde;
+  text-align: center;
+}
+
+.supercagaoday-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2vw;
+  padding: 0 1vw;
+}
+
+.supercagaoday h2 {
+  font-size: 1.875rem;
+  margin: 2rem auto;
+}
+
+.supercagaoday-items {
+  width: 300px;
+  height: 300px;
+  border: 3px solid transparent;
+  border-image: linear-gradient(to bottom right, #2596be 0%, #e42b21 25%, #82d01c 50%, blue 75%, #fd1892 100%);
+  border-image-slice: 1;
+  flex-grow: 1;
+}
+
+.supercagaoday-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.supercagaoday-items video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Media Query Mobile Navbar */
+
+@media (max-width: 800px) {
+  .menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 8vh;
+    right: 0px;
+    background: #19191b;
+    transition: .6s;
+    height: 92vh;
+    z-index: 1000;
+    height: 0;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .navbar-container.active .menu {
+    height: 92vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .btn-mobile {
+    display: flex;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #dcddde;
+    gap: .5rem;
+  }
+  .hamburger {
+    color: #dcddde;
+    display: block;
+    border-top: 2px solid;
+    width: 20px;
+  }
+  .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+  .navbar-container.active .hamburger {
+    border-top-color: transparent;
+  }
+  .navbar-container.active .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .navbar-container.active .hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+  .jobs-items {
+    z-index: -1;
+  }
+}
+
+/* Media Query About */
+
+@media(max-width: 1200px) {
+  .box {
+    margin: 2rem auto;
+  }
+}
