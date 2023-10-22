@@ -66,8 +66,8 @@ a {
   background-size: 4.375rem;
   background-position: 10% 35%;
   border-radius: 3.125rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   margin-left: 3.125rem;
 }
 
@@ -436,6 +436,14 @@ a {
     height: 0;
     visibility: hidden;
     overflow-y: hidden;
+  }
+  .logo {
+    background-size: 2rem;
+    background-position: 10% 35%;
+    border-radius: 3.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 3.125rem;
   }
   .navbar-container.active .menu {
     height: 92vh;
